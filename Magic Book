@@ -9,7 +9,7 @@ give @p written_book 1 0 {title:"Magic Book",author:"The_Webmage",pages:[
 
 {text:'* Charged Creeper\n',color:dark_aqua,clickEvent:{action:run_command,value:'/summon Creeper ~ ~ ~ {powered:1}'}},
 {text:'* Ender Dragon\n',color:dark_aqua,clickEvent:{action:run_command,value:'/summon EnderDragon ~ ~ ~'}},
-{text:'* Wither Skeleton\n',color:dark_aqua,clickEvent:{action:run_command,value:'/summon Skeleton ~ ~ ~ {SkeletonType:1}'}}]}",
+{text:'* Wither Skeleton\n',color:dark_aqua,clickEvent:{action:run_command,value:'/summon Skeleton ~ ~ ~ {SkeletonType:1,Equipment:[{id:minecraft:stone_sword}]}'}}]}",
 
 "{text:'Difficulty\n\n',extra:[
 {text:'* Peaceful\n',color:dark_aqua,clickEvent:{action:run_command,value:'/difficulty 0'}},
