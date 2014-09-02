@@ -1,0 +1,85 @@
+give @p written_book 1 0 {title:"Magic Book",author:"The_Webmage",pages:[
+
+"{text:'Give and Summon\n\n',extra:[
+{text:'* Barrier\n',color:dark_aqua,clickEvent:{action:run_command,value:'/give @p barrier'}},
+{text:'* Command Block\n',color:dark_aqua,clickEvent:{action:run_command,value:'/give @p command_block'}},
+{text:'* Command Minecart\n',color:dark_aqua,clickEvent:{action:run_command,value:'/give @p minecraft:command_block_minecart'}},
+{text:'* Dragon Egg\n',color:dark_aqua,clickEvent:{action:run_command,value:'/give @p minecraft:dragon_egg'}},
+{text:'* Mob Spawner\n\n',color:dark_aqua,clickEvent:{action:run_command,value:'/give @p minecraft:mob_spawner'}},
+
+{text:'* Charged Creeper\n',color:dark_aqua,clickEvent:{action:run_command,value:'/summon Creeper ~ ~ ~ {powered:1}'}},
+{text:'* Ender Dragon\n',color:dark_aqua,clickEvent:{action:run_command,value:'/summon EnderDragon ~ ~ ~'}},
+{text:'* Wither Skeleton\n',color:dark_aqua,clickEvent:{action:run_command,value:'/summon Skeleton ~ ~ ~ {SkeletonType:1}'}}]}",
+
+"{text:'Difficulty\n\n',extra:[
+{text:'* Peaceful\n',color:dark_aqua,clickEvent:{action:run_command,value:'/difficulty 0'}},
+{text:'* Easy\n',color:dark_aqua,clickEvent:{action:run_command,value:'/difficulty 1'}},
+{text:'* Normal\n',color:dark_aqua,clickEvent:{action:run_command,value:'/difficulty 2'}},
+{text:'* Hard\n\n',color:dark_aqua,clickEvent:{action:run_command,value:'/difficulty 3'}},
+
+{text:'Game Mode\n\n',color:black},
+{text:'* Survival\n',color:dark_aqua,clickEvent:{action:run_command,value:'/gamemode 0'}}, 
+{text:'* Creative\n',color:dark_aqua,clickEvent:{action:run_command,value:'/gamemode 1'}},
+{text:'* Adventure\n',color:dark_aqua,clickEvent:{action:run_command,value:'/gamemode 2'}}, 
+{text:'* Spectator',color:dark_aqua,clickEvent:{action:run_command,value:'/gamemode 3'}}]}",
+
+"{text:'Time\n\n',extra:[
+{text:'* Advance time\n',color:dark_aqua,clickEvent:{action:run_command,value:'/time add 1000'}},
+
+{text:'* Set time: ',color:black},
+{text:'Day - ',color:dark_aqua,clickEvent:{action:run_command,value:'/time set day'}},
+{text:'Night\n',color:dark_aqua,clickEvent:{action:run_command,value:'/time set night'}},
+
+{text:'* Day cycle: ',color:black},
+{text:'On - ',color:dark_aqua,clickEvent:{action:run_command,value:'/gamerule doDaylightCycle true'}},
+{text:'Off\n\n',color:dark_aqua,clickEvent:{action:run_command,value:'/gamerule doDaylightCycle false'}},
+
+{text:'Weather\n\n',color:black},
+{text:'* Off\n',color:dark_aqua,clickEvent:{action:run_command,value:'/weather clear 1000000'}},
+{text:'* Rain\n',color:dark_aqua,clickEvent:{action:run_command,value:'/weather rain 1000000'}},
+{text:'* Thunder',color:dark_aqua,clickEvent:{action:run_command,value:'/weather rain 1000000'}}]}",
+
+
+"{text:'Other Settings I\n\n',color:black,extra:[
+{text:'* Command Feedback\n',color:black},
+{text:' On - ',color:dark_aqua,clickEvent:{action:run_command,value:'/gamerule sendCommandFeedback true'}},
+{text:'Off\n',color:dark_aqua,clickEvent:{action:run_command,value:'/gamerule sendCommandFeedback false'}},
+
+{text:'* Command Output\n',color:black},
+{text:' On - ',color:dark_aqua,clickEvent:{action:run_command,value:'/gamerule commandBlockOutput true'}},
+{text:'Off\n',color:dark_aqua,clickEvent:{action:run_command,value:'/gamerule commandBlockOutput false'}},
+
+{text:'* Death Messages\n',color:black},
+{text:' On - ',color:dark_aqua,clickEvent:{action:run_command,value:'/gamerule showDeathMessages true'}},
+{text:'Off\n',color:dark_aqua,clickEvent:{action:run_command,value:'/gamerule showDeathMessages false'}},
+
+{text:'* Fire Tick\n',color:black},
+{text:' On - ',color:dark_aqua,clickEvent:{action:run_command,value:'/gamerule doFireTick true'}},
+{text:'Off\n',color:dark_aqua,clickEvent:{action:run_command,value:'/gamerule doFireTick false'}},
+
+{text:'* Mob Loot\n',color:black},
+{text:' On - ',color:dark_aqua,clickEvent:{action:run_command,value:'/gamerule doMobLoot true'}},
+{text:'Off\n',color:dark_aqua,clickEvent:{action:run_command,value:'/gamerule doMobLoot false'}}]}",
+
+"{text:'Other Settings II\n\n',color:black,extra:[
+{text:'* Mob Spawns\n',color:black},
+{text:' On - ',color:dark_aqua,clickEvent:{action:run_command,value:'/gamerule doMobSpawning true'}},
+{text:'Off\n',color:dark_aqua,clickEvent:{action:run_command,value:'/gamerule doMobSpawning false'}},
+
+{text:'* Tile Drops\n',color:black},
+{text:' On -',color:dark_aqua,clickEvent:{action:run_command,value:'/gamerule doTileDrops true'}},
+{text:'Off\n',color:dark_aqua,clickEvent:{action:run_command,value:'/gamerule doTileDrops false'}},
+
+{text:'* Inventory\n',color:black},
+{text:' Keep - ',color:dark_aqua,clickEvent:{action:run_command,value:'/gamerule keepInventory true'}},
+{text:'Drop\n',color:dark_aqua,clickEvent:{action:run_command,value:'/gamerule keepInventory false'}},
+
+{text:'* Mob Griefing\n',color:black},
+{text:' On - ',color:dark_aqua,clickEvent:{action:run_command,value:'/gamerule mobGriefing true'}},
+{text:'Off\n',color:dark_aqua,clickEvent:{action:run_command,value:'/gamerule mobGriefing false'}},
+
+{text:'* Regeneration\n',color:black},
+{text:' On - ',color:dark_aqua,clickEvent:{action:run_command,value:'/gamerule naturalRegeneration true'}},
+{text:'Off\n',color:dark_aqua,clickEvent:{action:run_command,value:'/gamerule naturalRegeneration false'}}]}"
+
+]}
