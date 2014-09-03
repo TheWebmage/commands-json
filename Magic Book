@@ -1,92 +1,165 @@
-give @p written_book 1 0 {title:"Command Book",author:"God",pages:[
+give @p written_book 1 0 {title:"Command Book", author:"God", pages:[
 
 
 
-"{text:'',extra:[
-    {text:'Clear Scorebord: ',color:'black'},
-        {text:'Player / ',color:'dark_aqua',clickEvent:{action:'run_command',value:'/scoreboard players reset @p'}},
-        {text:'Global\n\n',color:'dark_aqua',clickEvent:{action:'run_command',value:'/scoreboard players reset *'}},
+"{text:'', extra:[
+    {text:'Clear Scorebord: ', color:'black'},
+        {text:'Player', color:'dark_aqua', clickEvent:{action:'run_command', value:'/scoreboard players reset @p'}},
+        {text:' | ', color:'dark_gray'},
+        {text:'Global', color:'dark_aqua', clickEvent:{action:'run_command', value:'/scoreboard players reset *'}},
 
-    {text:'Give: ',color:'black'},
-        {text:'Barrier / ',color:'dark_aqua',clickEvent:{action:'run_command',value:'/give @p barrier'}},
-        {text:'Command Block / ',color:'dark_aqua',clickEvent:{action:'run_command',value:'/give @p command_block'}},
-        {text:'Command Minecart / ',color:'dark_aqua',clickEvent:{action:'run_command',value:'/give @p minecraft:command_block_minecart'}},
-        {text:'Dragon Egg / ',color:'dark_aqua',clickEvent:{action:'run_command',value:'/give @p minecraft:dragon_egg'}},
-        {text:'Mob Spawner\n\n',color:'dark_aqua',clickEvent:{action:'run_command',value:'/give @p minecraft:mob_spawner'}},
+    {text:'\n\n'},
 
-    {text:'Summon: ',color:'black'},
-        {text:'Charged Creeper / ',color:'dark_aqua',clickEvent:{action:'run_command',value:'/summon Creeper ~ ~ ~ {powered:1}'}},
-        {text:'Elder Guardian / ',color:'dark_aqua',clickEvent:{action:'run_command',value:'/summon Guardian ~ ~ ~ {Elder:1b}'}},
-        {text:'Giant / ',color:'dark_aqua',clickEvent:{action:'run_command',value:'/summon Giant'}},
-        {text:'Killer Rabbit / ',color:'dark_aqua',clickEvent:{action:'run_command',value:'/summon Rabbit ~ ~ ~ {RabbitType:99}'}},
-        {text:'Wither Skeleton / ',color:'dark_aqua',clickEvent:{action:'run_command',value:'/summon Skeleton ~ ~ ~ {SkeletonType:1,Equipment:[{id:minecraft:stone_sword}]}'}},
-        {text:'Ender Crystal',color:'dark_aqua',clickEvent:{action:'run_command',value:'/summon EnderCrystal ~ ~1 ~'}}
+    {text:'Give: ', color:'black'},
+        {text:'Barrier', color:'dark_aqua', clickEvent:{action:'run_command', value:'/give @p barrier'}},
+        {text:' | ', color:'dark_gray'},
+        {text:'Command Block', color:'dark_aqua', clickEvent:{action:'run_command', value:'/give @p command_block'}},
+        {text:' | ', color:'dark_gray'},
+        {text:'Command Minecart', color:'dark_aqua', clickEvent:{action:'run_command', value:'/give @p minecraft:command_block_minecart'}},
+        {text:' | ', color:'dark_gray'},
+        {text:'Dragon Egg', color:'dark_aqua', clickEvent:{action:'run_command', value:'/give @p minecraft:dragon_egg'}},
+        {text:' | ', color:'dark_gray'},
+        {text:'Mob Spawner', color:'dark_aqua', clickEvent:{action:'run_command', value:'/give @p minecraft:mob_spawner'}},
+
+    {text:'\n\n'},
+
+    {text:'Summon: ', color:'black'},
+        {text:'Charged Creeper', color:'dark_aqua', clickEvent:{action:'run_command', value:'/summon Creeper ~ ~ ~ {powered:1}'}},
+        {text:' | ', color:'dark_gray'},
+        {text:'Elder Guardian', color:'dark_aqua', clickEvent:{action:'run_command', value:'/summon Guardian ~ ~ ~ {Elder:1b}'}},
+        {text:' | ', color:'dark_gray'},
+        {text:'Giant', color:'dark_aqua', clickEvent:{action:'run_command', value:'/summon Giant'}},
+        {text:' | ', color:'dark_gray'},
+        {text:'Killer Rabbit', color:'dark_aqua', clickEvent:{action:'run_command', value:'/summon Rabbit ~ ~ ~ {RabbitType:99}'}},
+        {text:' | ', color:'dark_gray'},
+        {text:'Wither Skeleton', color:'dark_aqua', clickEvent:{action:'run_command', value:'/summon Skeleton ~ ~ ~ {SkeletonType:1, Equipment:[{id:minecraft:stone_sword}]}'}},
+        {text:' | ', color:'dark_gray'},
+        {text:'Ender Crystal', color:'dark_aqua', clickEvent:{action:'run_command', value:'/summon EnderCrystal ~ ~1 ~'}}
 ]}",
 
 
 
-"{text:'',extra:[
-    {text:'Difficulty: ',color:'black'},
-	    {text:'Peaceful / ',color:'dark_aqua',clickEvent:{action:'run_command',value:'/difficulty 0'}},
-	    {text:'Easy / ',color:'dark_aqua',clickEvent:{action:'run_command',value:'/difficulty 1'}},
-	    {text:'Normal / ',color:'dark_aqua',clickEvent:{action:'run_command',value:'/difficulty 2'}},
-	    {text:'Hard\n\n',color:'dark_aqua',clickEvent:{action:'run_command',value:'/difficulty 3'}},
-	
-    {text:'Game mode: ',color:'black'}, 
-        {text:'Survival / ',color:'dark_aqua',clickEvent:{action:'run_command',value:'/gamemode 0'}}, 
-        {text:'Creative / ',color:'dark_aqua',clickEvent:{action:'run_command',value:'/gamemode 1'}},
-        {text:'Adventure / ',color:'dark_aqua',clickEvent:{action:'run_command',value:'/gamemode 2'}}, 
-        {text:'Spectator\n\n',color:'dark_aqua',clickEvent:{action:'run_command',value:'/gamemode 3'}},
+"{text:'', extra:[
+    {text:'Difficulty: ', color:'black'},
+	    {text:'Peaceful', color:'dark_aqua', clickEvent:{action:'run_command', value:'/difficulty 0'}},
+	    {text:' | ', color:'dark_gray'},
+	    {text:'Easy', color:'dark_aqua', clickEvent:{action:'run_command', value:'/difficulty 1'}},
+	    {text:' | ', color:'dark_gray'},
+	    {text:'Normal', color:'dark_aqua', clickEvent:{action:'run_command', value:'/difficulty 2'}},
+	    {text:' | ', color:'dark_gray'},
+	    {text:'Hard', color:'dark_aqua', clickEvent:{action:'run_command', value:'/difficulty 3'}},
 
-    {text:'Time: ',color:'black'},
-        {text:'Day / ',color:'dark_aqua',clickEvent:{action:'run_command',value:'/time set day'}},
-        {text:'Night / ',color:'dark_aqua',clickEvent:{action:'run_command',value:'/time set night'}},
-        {text:'Advance / ',color:'dark_aqua',clickEvent:{action:'run_command',value:'/time add 1000'}},
-    {text:'Day cycle: ',color:'black'},
-        {text:'On / ',color:'dark_aqua',clickEvent:{action:'run_command',value:'/gamerule doDaylightCycle true'}},
-        {text:'Off\n\n',color:'dark_aqua',clickEvent:{action:'run_command',value:'/gamerule doDaylightCycle false'}},
+    {text:'\n\n'},
 
-    {text:'Weather: ',color:'black'},
-        {text:'Clear / ',color:'dark_aqua',clickEvent:{action:'run_command',value:'/weather clear'}},
-        {text:'Long clear / ',color:'dark_aqua',clickEvent:{action:'run_command',value:'/weather clear 1000000'}},
-        {text:'Rain / ',color:'dark_aqua',clickEvent:{action:'run_command',value:'/weather rain 1000000'}},
-        {text:'Thunder',color:'dark_aqua',clickEvent:{action:'run_command',value:'/weather thunder 1000000'}}
+    {text:'Game mode: ', color:'black'},
+        {text:'Survival', color:'dark_aqua', clickEvent:{action:'run_command', value:'/gamemode 0'}},
+        {text:' | ', color:'dark_gray'},
+        {text:'Creative', color:'dark_aqua', clickEvent:{action:'run_command', value:'/gamemode 1'}},
+        {text:' | ', color:'dark_gray'},
+        {text:'Adventure', color:'dark_aqua', clickEvent:{action:'run_command', value:'/gamemode 2'}},
+        {text:' | ', color:'dark_gray'},
+        {text:'Spectator', color:'dark_aqua', clickEvent:{action:'run_command', value:'/gamemode 3'}},
+
+    {text:'\n\n'},
+
+    {text:'Time: ', color:'black'},
+        {text:'Day', color:'dark_aqua', clickEvent:{action:'run_command', value:'/time set day'}},
+        {text:' | ', color:'dark_gray'},
+        {text:'Night', color:'dark_aqua', clickEvent:{action:'run_command', value:'/time set night'}},
+        {text:' | ', color:'dark_gray'},
+        {text:'Advance', color:'dark_aqua', clickEvent:{action:'run_command', value:'/time add 1000'}},
+
+    {text:'\n'},
+
+    {text:'Day cycle: ', color:'black'},
+        {text:'On', color:'dark_aqua', clickEvent:{action:'run_command', value:'/gamerule doDaylightCycle true'}},
+        {text:' | ', color:'dark_gray'},
+        {text:'Off', color:'dark_aqua', clickEvent:{action:'run_command', value:'/gamerule doDaylightCycle false'}},
+
+    {text:'\n\n'},
+
+    {text:'Weather: ', color:'black'},
+        {text:'Clear', color:'dark_aqua', clickEvent:{action:'run_command', value:'/weather clear'}},
+        {text:' | ', color:'dark_gray'},
+        {text:'Long clear', color:'dark_aqua', clickEvent:{action:'run_command', value:'/weather clear 1000000'}},
+        {text:' | ', color:'dark_gray'},
+        {text:'Rain', color:'dark_aqua', clickEvent:{action:'run_command', value:'/weather rain 1000000'}},
+        {text:' | ', color:'dark_gray'},
+        {text:'Thunder', color:'dark_aqua', clickEvent:{action:'run_command', value:'/weather thunder 1000000'}}
 ]}",
 
 
 
-"{text:'',extra:[
-    {text:'Command Feedback: ',color:'black'},
-        {text:'On / ',color:'dark_aqua',clickEvent:{action:'run_command',value:'/gamerule sendCommandFeedback true'}},
-        {text:'Off\n',color:'dark_aqua',clickEvent:{action:'run_command',value:'/gamerule sendCommandFeedback false'}},
-    {text:'Command Output: ',color:'black'},
-        {text:'On / ',color:'dark_aqua',clickEvent:{action:'run_command',value:'/gamerule commandBlockOutput true'}},
-        {text:'Off\n',color:'dark_aqua',clickEvent:{action:'run_command',value:'/gamerule commandBlockOutput false'}},
-    {text:'Death Messages: ',color:'black'},
-        {text:'On / ',color:'dark_aqua',clickEvent:{action:'run_command',value:'/gamerule showDeathMessages true'}},
-        {text:'Off\n',color:'dark_aqua',clickEvent:{action:'run_command',value:'/gamerule showDeathMessages false'}},
-    {text:'Fire Tick: ',color:'black'},
-        {text:'On / ',color:'dark_aqua',clickEvent:{action:'run_command',value:'/gamerule doFireTick true'}},
-        {text:'Off\n',color:'dark_aqua',clickEvent:{action:'run_command',value:'/gamerule doFireTick false'}},
-    {text:'Mob Loot: ',color:'black'},
-        {text:'On / ',color:'dark_aqua',clickEvent:{action:'run_command',value:'/gamerule doMobLoot true'}},
-        {text:'Off\n',color:'dark_aqua',clickEvent:{action:'run_command',value:'/gamerule doMobLoot false'}},
-    {text:'Mob Spawns: ',color:'black'},
-        {text:'On / ',color:'dark_aqua',clickEvent:{action:'run_command',value:'/gamerule doMobSpawning true'}},
-        {text:'Off\n',color:'dark_aqua',clickEvent:{action:'run_command',value:'/gamerule doMobSpawning false'}},
-    {text:'Tile Drops: ',color:'black'},
-        {text:'On / ',color:'dark_aqua',clickEvent:{action:'run_command',value:'/gamerule doTileDrops true'}},
-        {text:'Off\n',color:'dark_aqua',clickEvent:{action:'run_command',value:'/gamerule doTileDrops false'}},
-    {text:'Keep Inventory: ',color:'black'},
-        {text:'On / ',color:'dark_aqua',clickEvent:{action:'run_command',value:'/gamerule keepInventory true'}},
-        {text:'Off\n',color:'dark_aqua',clickEvent:{action:'run_command',value:'/gamerule keepInventory false'}},
-    {text:'Mob Griefing: ',color:'black'},
-        {text:'On / ',color:'dark_aqua',clickEvent:{action:'run_command',value:'/gamerule mobGriefing true'}},
-        {text:'Off\n',color:'dark_aqua',clickEvent:{action:'run_command',value:'/gamerule mobGriefing false'}},
-    {text:'Regeneration: ',color:'black'},
-        {text:'On / ',color:'dark_aqua',clickEvent:{action:'run_command',value:'/gamerule naturalRegeneration true'}},
-        {text:'Off\n',color:'dark_aqua',clickEvent:{action:'run_command',value:'/gamerule naturalRegeneration false'}}
+"{text:'', extra:[
+    {text:'Command Feedback: ', color:'black'},
+        {text:'On', color:'dark_aqua', clickEvent:{action:'run_command', value:'/gamerule sendCommandFeedback true'}},
+        {text:' | ', color:'dark_gray'},
+        {text:'Off', color:'dark_aqua', clickEvent:{action:'run_command', value:'/gamerule sendCommandFeedback false'}},
+    
+    {text:'\n'},
+
+    {text:'Command Output: ', color:'black'},
+        {text:'On', color:'dark_aqua', clickEvent:{action:'run_command', value:'/gamerule commandBlockOutput true'}},
+        {text:' | ', color:'dark_gray'},
+        {text:'Off', color:'dark_aqua', clickEvent:{action:'run_command', value:'/gamerule commandBlockOutput false'}},
+
+    {text:'\n'},
+
+    {text:'Death Messages: ', color:'black'},
+        {text:'On', color:'dark_aqua', clickEvent:{action:'run_command', value:'/gamerule showDeathMessages true'}},
+        {text:' | ', color:'dark_gray'},
+        {text:'Off', color:'dark_aqua', clickEvent:{action:'run_command', value:'/gamerule showDeathMessages false'}},
+
+    {text:'\n'},
+
+    {text:'Fire Tick: ', color:'black'},
+        {text:'On', color:'dark_aqua', clickEvent:{action:'run_command', value:'/gamerule doFireTick true'}},
+        {text:' | ', color:'dark_gray'},
+        {text:'Off', color:'dark_aqua', clickEvent:{action:'run_command', value:'/gamerule doFireTick false'}},
+
+    {text:'\n'},
+
+    {text:'Mob Loot: ', color:'black'},
+        {text:'On', color:'dark_aqua', clickEvent:{action:'run_command', value:'/gamerule doMobLoot true'}},
+        {text:' | ', color:'dark_gray'},
+        {text:'Off', color:'dark_aqua', clickEvent:{action:'run_command', value:'/gamerule doMobLoot false'}},
+
+    {text:'\n'},
+
+    {text:'Mob Spawns: ', color:'black'},
+        {text:'On', color:'dark_aqua', clickEvent:{action:'run_command', value:'/gamerule doMobSpawning true'}},
+        {text:' | ', color:'dark_gray'},
+        {text:'Off', color:'dark_aqua', clickEvent:{action:'run_command', value:'/gamerule doMobSpawning false'}},
+
+    {text:'\n'},
+
+    {text:'Tile Drops: ', color:'black'},
+        {text:'On', color:'dark_aqua', clickEvent:{action:'run_command', value:'/gamerule doTileDrops true'}},
+        {text:' | ', color:'dark_gray'},
+        {text:'Off', color:'dark_aqua', clickEvent:{action:'run_command', value:'/gamerule doTileDrops false'}},
+
+    {text:'\n'},
+
+    {text:'Keep Inventory: ', color:'black'},
+        {text:'On', color:'dark_aqua', clickEvent:{action:'run_command', value:'/gamerule keepInventory true'}},
+        {text:' | ', color:'dark_gray'},
+        {text:'Off', color:'dark_aqua', clickEvent:{action:'run_command', value:'/gamerule keepInventory false'}},
+
+    {text:'\n'},
+
+    {text:'Mob Griefing: ', color:'black'},
+        {text:'On', color:'dark_aqua', clickEvent:{action:'run_command', value:'/gamerule mobGriefing true'}},
+        {text:' | ', color:'dark_gray'},
+        {text:'Off', color:'dark_aqua', clickEvent:{action:'run_command', value:'/gamerule mobGriefing false'}},
+
+    {text:'\n'},
+
+    {text:'Regeneration: ', color:'black'},
+        {text:'On', color:'dark_aqua', clickEvent:{action:'run_command', value:'/gamerule naturalRegeneration true'}},
+        {text:' | ', color:'dark_gray'},
+        {text:'Off', color:'dark_aqua', clickEvent:{action:'run_command', value:'/gamerule naturalRegeneration false'}}
 ]}"
+
 
 
 ]}
