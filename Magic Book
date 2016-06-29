@@ -2,7 +2,16 @@
 
 give @p written_book 1 0 {title:"Magic Book",author:"The_Webmage",pages:[
 
-"{text:'Clear\n\n',extra:[
+"{text:'Index\n\n',extra:[
+	{text:'*Clear and give',color:dark_aqua,clickEvent{action:change_page,value:1},
+	{text:'*Game Settings',color:dark_aqua,clickEvent{action:change_page,value:2},
+	{text:'*Time and Weather',color:dark_aqua,clickEvent{action:change_page,value:3},
+	{text:'*Summon',color:dark_aqua,clickEvent{action:change_page,value:4},
+	{text:'*Other Settings I',color:dark_aqua,clickEvent{action:change_page,value:5},
+	{text:'*Other Settings II',color:dark_aqua,clickEvent{action:change_page,value:6},
+	{text:'*About',color:dark_aqua,clickEvent{action:change_page,value:7}]},
+
+{text:'Clear\n\n',extra:[
 	{text:'* Entities\n',color:black}, 
 	{text:' 100 blocks',color:dark_aqua,clickEvent:{action:run_command,value:'/kill @e[type=!Player,r=100]'}},
 	{text:' | ',color:black},
